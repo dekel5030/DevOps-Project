@@ -7,7 +7,7 @@ pageEncoding="UTF-8"%>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
-    <h1>Welcome to our devops project</h1>
+    <h1>Welcome to our devops project || test</h1>
 
     <form action="response.jsp" method="get">
       <label for="name">Enter your name:</label>
