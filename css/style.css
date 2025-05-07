@@ -1,2 +1,12 @@
-form { background-color: green;
-color: white;}
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.login-container {
+}
+
+form {
+  background-color: green;
+  color: white;
+}
