@@ -16,7 +16,7 @@ request.getParameter("confirm"); String message = ""; if
   <body>
     <div class="response-container">
       <h1 class="response-message"><%= message %></h1>
-      <a class="back-link" href="login.jsp">Go back</a>
+      <a class="back-link" href="index.jsp">Go back</a>
     </div>
   </body>
 </html>
