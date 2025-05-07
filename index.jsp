@@ -16,14 +16,16 @@
             message = "Invalid password";
         } else {
             response.sendRedirect("todoList/index.html");
-            return; // Stop processing
+            return;
         }
     }
 %>
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>DevOps Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
@@ -37,7 +39,7 @@
       <form action="index.jsp" method="post" class="login-form">
         <div class="form-group">
           <label for="username">Username:</label>
-          <input class="input-username" type="text" id="username" name="username" required />
+          <input class="input-username" type="text" id="username" name="username" placeholder="e.g. devops" required />
         </div>
 
         <div class="form-group">
