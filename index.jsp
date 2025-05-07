@@ -3,20 +3,48 @@ pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Devops Project</title>
+    <title>Login Page</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
-    <h1>Welcome to our devops project || test 1.3 using git polls</h1>
+    <div class="login-container">
+      <h1 class="login-title">DevOps Login</h1>
+      <form action="response.jsp" method="post" class="login-form">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input
+            class="input-username"
+            type="text"
+            id="username"
+            name="username"
+            required
+          />
+        </div>
 
-    <form action="response.jsp" method="get">
-      <label for="name">Enter your name:</label>
-      <input type="text" id="name" name="username" required />
-      <button type="submit">Submit</button>
-    </form>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            class="input-password"
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+        </div>
 
-    <br />
+        <div class="form-group">
+          <label for="confirm">Confirm Password:</label>
+          <input
+            class="input-confirm"
+            type="password"
+            id="confirm"
+            name="confirm"
+            required
+          />
+        </div>
 
-    <a href="https://www.example.com" target="_blank">Visit Example.com</a>
+        <button class="submit-btn" type="submit">Login</button>
+      </form>
+    </div>
   </body>
 </html>
