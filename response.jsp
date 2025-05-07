@@ -3,9 +3,11 @@ pageEncoding="UTF-8"%> <% String username = request.getParameter("username");
 String password = request.getParameter("password"); String confirm =
 request.getParameter("confirm"); String message = ""; if
 (!"devops".equals(username)) { message = "Invalid username"; } else if
-(!password.equals(confirm)) { message = "Passwords don't match"; } else if (
-!"devops".equals(password)) { message = "Invalid password"; } else { message =
-"Login successfully"; } %>
+(!password.equals(confirm)) { message = "Passwords don't match"; } else if
+(!"devops".equals(password)) { message = "Invalid password"; } else { //
+Redirect to the todoList/index page upon successful login
+response.sendRedirect("todoList/index"); return; // Return after redirect to
+stop further processing } %>
 
 <!DOCTYPE html>
 <html>
