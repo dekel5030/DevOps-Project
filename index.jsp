@@ -30,7 +30,7 @@
   </head>
   <body>
     <div class="login-container">
-      <h1 class="login-title">DevOps Login</h1>
+      <h1 class="login-title">DevOps Login test</h1>
 
       <% if (!message.isEmpty()) { %>
         <p class="error-message"><%= message %></p>
